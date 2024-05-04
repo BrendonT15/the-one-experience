@@ -1,0 +1,31 @@
+.text-container .poem-title {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.text-container {
+    position: absolute;
+    width: 900px;
+    height: 450px;
+    top: calc(50% - 250px);
+    left: calc(50% - 900px);
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 2rem 2rem 2rem;
+    z-index: 110;
+}
+
+.text-container .poem-container .poem-text {
+    color: #fff;
+    text-align: left;
+    white-space: pre-line;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 1rem; 
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+}
+
