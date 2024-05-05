@@ -29,3 +29,8 @@
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1600px){
+    .text-container {
+        left: calc(50% - 650px);
+    }
+}
