@@ -129,3 +129,11 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: 1600px){
+    .arrow_up {
+        top: calc(50% - 300px); 
+    }
+    .arrow_down {
+        top: calc(50% + 225px);
+    }
+}
