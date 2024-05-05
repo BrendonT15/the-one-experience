@@ -255,4 +255,15 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: 1040px){
+    .h1 {
+        font-size: 5.8rem;
+    }
+    .h2 {
+        font-size: 4.7rem;
+    }
 
+    .arrow{
+        top: calc(50% - 300px);
+    }
+}
