@@ -95,27 +95,29 @@ function HeroImg4() {
             <img className="parallax reflective" ref={bg_img_ref} src={reflective} data-speedx="0.15" data-speedy="0.15" data-rotation="0" alt="background"/>
             <img className="moon" src={moon} data-speedx="0.125" data-speedy="0" data-rotation="0.20" alt="bright_moon"/>
             <img className="parallax fog_2" src={fog_2} data-speedx="0.027" data-speedy="0.018" alt="fog_2"/>
-            <TextBox title="Inverted World" text={`The Moon casts its enchanting glow upon the Earth,
-            A shimmering veil illuminates the darkness, unraveling deep secrets hidden in the leaves
-            For there is truth to shed light on,
-            Seek the calmness of the lake, it embraces the mind
-            It reflects the truth you seek,
-            The lake is nature's perfect mirror,
-            A flawless imitation of reality, 
-            Inverting the world upside down,
-            An endless domain stretching from one sky to another,
-            Where dualities merge in seamless flow,
-            Creating oneness in the cosmos,
-            An inverted world with diverging binaries, yet all are interconnected`}/>
+            <TextBox title="Inverted World" text={`Beneath the starry sky, the moonlit world is still,
+                Where nothing stands apart, and all is one.
+                The lake, nature’s perfect mirror,
+                A flawless echo of reality.
+
+                It turns the world upside down,
+                Stretching endlessly from one sky to another.
+                Is there a boundary between this world and its reflection?
+                Who can say which is real and which the echo?
+
+                Here, dualities merge in a seamless flow,
+                Oneness weaves through the cosmos.
+                An inverted world of diverging binaries, all deeply connected,
+                Each reflection blurring the line between self and other.`}/>
           <img className="parallax fog_3" src={fog_3} data-speedx="0.11" data-speedy="0.0245" data-rotation="0" alt="fog_3"/>
             <img className="fog_left" ref={fog_left_ref} src={fog_4} alt="fog_left"/>
             <img className="fog_right" ref={fog_right_ref} src={fog_4} alt="fog_right"/>
             <img className="blackshadow hide" src={blackshadow} alt="black_shadow"/>
             <div className="arrow_up hide">
-                <Link to="/page-five" className="arrow-link"><FaAngleUp size={40}/></Link>
+                <Link to="/page-four" className="arrow-link"><FaAngleUp size={40}/></Link>
             </div>
             <div className="arrow_down hide">
-                <Link to="/page-three" className="arrow-link"><FaAngleDown size={40}/></Link>
+                <Link to="/page-two" className="arrow-link"><FaAngleDown size={40}/></Link>
             </div>
         </div>
     </div>

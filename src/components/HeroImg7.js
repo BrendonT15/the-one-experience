@@ -5,13 +5,12 @@ import TextBox from "./TextBox.js";
 import gsap from "gsap";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 
-import winter from "../assets/winter.jpg";
+import seed from "../assets/seed.jpg";
 import fog_4 from "../assets/fog_4.png";
-import snowfall from "../assets/snowfall.png";
+
 function HeroImg7() {
   const fog_left_ref = useRef(null);
   const fog_right_ref = useRef(null);
-  const snow_ref = useRef(null);
   const bg_img_ref = useRef(null);
 
   let timeline = gsap.timeline();
@@ -76,41 +75,35 @@ function HeroImg7() {
     });
   };
 
-  if(snow_ref.current){
-    timeline.from(snow_ref.current, {
-      opacity: 0,
-      duration: 0.50,
-    });
-  };
 });
 
   return (
     <div className="hero">
         <div className="mask_7">
             <div className="vignette hide"></div>
-            <img className="parallax winter" ref={bg_img_ref} src={winter} data-speedx="0.15" data-speedy="0.15" data-rotation="0" alt="background"/>
-            <img className="parallax snowfall" ref={snow_ref} style={{opacity:1}} src={snowfall} data-speedx="0.12" data-speedy="0.085" data-rotation="0.345" alt="snow"/>
-            <TextBox title="Winter Sorrows" text={`Tread through the harsh Winter cold,
-            Where frost-laced winds hinder your path,
-            A season filled with hardships,
-            Yet from its depths, new strengths grow
-            Persevere and navigate nature's obstacles,
-            For suffering is innate,
-            Stay resilient and true,
-            Shape your soul and understand being,
-            The path does not betray you,
-            Do not falter as the path is beneath you,
-            Tread the path and flatten the snow, 
-            Overcome the hardships and widen the path,
-            Your truth awaits...
+            <img className="parallax seed" ref={bg_img_ref} src={seed} data-speedx="0.15" data-speedy="0.15" data-rotation="0" alt="background"/>
+            <TextBox title="Buried Seed, Unveiled Potential" text={`Buried deep in the soil, the seed rests,
+                in darkness, it waits, yet it holds boundless potential.
+                Unseen, but alive, with the quiet wisdom of the earth,
+                ready to unfold when the time is right.
+
+                The warmth of sunlight and the touch of rain,
+                nourish the seed, coaxing life to rise.
+                From the depths of the earth, a small sprout emerges,
+                reaching towards the light, seeking its true form.
+
+                With patience, it grows, rooted firmly in the ground,
+                each leaf unfurling with calm and clarity.
+                The seed becomes the tree, just as the Buddha nature grows,
+                slowly, steadily, until it stands in its full splendor.
             `}/>
             <img className="fog_left" ref={fog_left_ref} src={fog_4} alt="fog_left"/>
             <img className="fog_right" ref={fog_right_ref} src={fog_4} alt="fog_right"/>
             <div className="arrow_up hide">
-                <Link to="/page-eight" className="arrow-link"><FaAngleUp size={40}/></Link>
+                <Link to="/page-seven" className="arrow-link"><FaAngleUp size={40}/></Link>
             </div>
             <div className="arrow_down hide">
-                <Link to="/page-six" className="arrow-link"><FaAngleDown size={40}/></Link>
+                <Link to="/page-five" className="arrow-link"><FaAngleDown size={40}/></Link>
             </div>
         </div>
     </div>

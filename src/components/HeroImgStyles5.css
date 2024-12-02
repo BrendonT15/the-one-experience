@@ -4,11 +4,11 @@
     height: 100vh;
 }
 
-.summer{
+.lotus{
     position: relative;
     width: 2400px;
     height: 2800px;
-    top: calc(50% - 200px);
+    top: calc(50%);
     left: calc(50% + 50px);
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -52,6 +52,30 @@
     top: 0;
     right: 0;
     z-index: 19;
+}
+
+.arrow_up {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    top: calc(50% - 400px);
+    left: calc(50%);
+    z-index: 101;
+}
+
+.arrow_down {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    top: calc(50% + 350px); 
+    left: calc(50%);       
+    z-index: 101;          
+}
+
+.arrow_up:hover {
+    background: rgba(145,145,145,0.5);
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
 .arrow_up:hover {

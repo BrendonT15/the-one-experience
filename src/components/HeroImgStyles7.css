@@ -4,24 +4,15 @@
     height: 100vh;
 }
 
-.winter{
+.seed{
     position: absolute;
-    width: 2400px;
-    height: 1900px;
+    width: 2100px;
+    height: 1700px;
     background-size: cover;
     top: calc(50% - 100px);
     left: calc(50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-}
-
-.mask_7 .snowfall{
-    position: absolute;
-    width: 2000px;
-    top: calc(50%);
-    left: calc(50%);
-    transform: translate(-50%, -50%);
-    z-index: 2;
 }
 
 .mask_7 .fog_left {
@@ -38,6 +29,30 @@
     top: calc(50% - 1200px);
     left: calc(50% - 2000px);
     z-index: 102;
+}
+
+.arrow_up {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    top: calc(50% - 400px);
+    left: calc(50%);
+    z-index: 101;
+}
+
+.arrow_down {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    top: calc(50% + 350px); 
+    left: calc(50%);       
+    z-index: 101;          
+}
+
+.arrow_up:hover {
+    background: rgba(145,145,145,0.5);
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
 .arrow_up:hover {

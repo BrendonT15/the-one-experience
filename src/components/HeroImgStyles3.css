@@ -14,10 +14,10 @@
     z-index: 100;
 }
 
-.stream {
+.river{
     position: absolute;
-    height: 1800px;
     width: 2400px;
+    height: 2800px;
     top: calc(50%);
     left: calc(50%);
     transform: translate(-50%, -50%);
@@ -25,7 +25,23 @@
 }
 
 .TextBox {
-    position: absolute; 
+    position: absolute;
+}
+
+.mask_3 .leaves_1{
+    position: absolute;
+    width: 700px;
+    top: calc(50% - 150px);
+    left: calc(50% - 400px);
+    z-index: 2;
+}
+
+.mask_3 .leaves_2{
+    position: absolute;
+    width: 900px;
+    top: calc(50% - 200px);
+    left: calc(50% - 350px);
+    z-index: 2;
 }
 
 .mask_3 .fog_5 {
@@ -44,54 +60,6 @@
     z-index: 5;
 }
 
-.mask_3 .lion {
-    position: absolute; 
-    width: 600px; 
-    top: calc(50% + 25px);
-    left: calc(50% + 550px);
-    z-index: 4;
-}
-
-.mask_3 .vine_1 {
-    position: absolute;
-    width: 600px;
-    top: calc(50% - 200px);
-    left: calc(50% - 700px);
-    z-index: 10;
-}
-
-.mask_3 .vine_2 {
-    position: absolute;
-    width: 900px;
-    top: calc(50% - 300px);
-    left: calc(50% + 700px);
-    z-index: 10;
-}
-
-.mask_3 .bush_1 {
-    position: absolute;
-    width: 1500px;
-    top: calc(50% + 300px);
-    left: calc(50% + 800px);
-    z-index: 6;
-}
-
-.mask_3 .bush_2 {
-    position: absolute;
-    width: 800px;
-    top: calc(50% + 250px);
-    left: calc(50% + 700px);
-    z-index: 5;
-}
-
-.mask_3 .bush_3 {
-    position: absolute;
-    width: 800px;
-    top: calc(50% + 400px);
-    left: calc(50% - 850px);
-    z-index: 6;
-}
-
 .mask_3 .fog_left {
     position: absolute;
     width: 2800px;
@@ -106,6 +74,24 @@
     top: calc(50% - 1200px);
     left: calc(50% - 2000px);
     z-index: 102;
+}
+
+.arrow_up {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    top: calc(50% - 400px);
+    left: calc(50%);
+    z-index: 101;
+}
+
+.arrow_down {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    top: calc(50% + 350px); 
+    left: calc(50%);       
+    z-index: 101;          
 }
 
 .arrow_up:hover {

@@ -5,22 +5,19 @@ import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 import React, {useEffect, useRef} from 'react';
 import gsap from 'gsap';
 
-import background from "../assets/stream-reflection.jpg";
+import river from "../assets/river.jpg";
+import leaves_1 from "../assets/leaves_1.png";
+import leaves_2 from "../assets/leaves_2.png";
 import fog_4 from "../assets/fog_4.png";
 import fog_5 from "../assets/fog_5.png";
 import fog_7 from "../assets/fog_7.png";
-import lion from "../assets/mountain_lion.png";
-import vine_1 from "../assets/vines_1.png";
-import vine_2 from "../assets/vines_2.png";
-import mountainbush_1 from "../assets/mountain_bush_1.png";
-import mountainbush_2 from "../assets/mountain_bush_2.png";
 
 function HeroImg3() {
   const fog_left_ref = useRef(null);
   const fog_right_ref = useRef(null);
   const bg_img_ref = useRef(null);
-  const vine_1_ref = useRef(null);
-  const vine_2_ref = useRef(null);
+  const leaves_1_ref = useRef(null);
+  const leaves_2_ref = useRef(null);
 
   let timeline = gsap.timeline();
 
@@ -85,40 +82,54 @@ function HeroImg3() {
           duration: 1.5,
       });
     };
+
+    if(leaves_1_ref.current && leaves_2_ref.current){
+      timeline.from(leaves_1_ref.current,{
+        opacity: 0,
+        duration: 0.75,
+      }).from(leaves_2_ref.current, {
+        opacity: 0,
+        duration: 0.50,
+      });
+    };
 });
 
   return (
     <div className= "hero">
       <div className= "mask_3">
         <div className="vignette hide"></div>
-        <img className="parallax stream" ref={bg_img_ref} src={background} data-speedx="0.15" data-speedy="0.15" data-rotation="0" alt="background"/>
-        <TextBox title="Mountain Tiger" text={`In the untamed wilderness, the mountain tiger reigns supreme amongst earthly beasts
-          Their fiery golden eyes, inflicting fear into their prey
-          Each stride is a testament to their unparalleled strength and speed,
-          Its thunderous roar trembles the soul,
-          Only the heavenly dragon can rival the tiger's prowess
-          However, in this cosmos lies a greater danger,
-          A double-edged sword known as man, 
-          Be careful of what you perceive, 
-          As trickery lies behind their words, 
-          The intetions of man are ambiguous, 
-          Now heed my words,
-          Take a step away from the tiger, but take two steps away from man...`}/>
-        <img className="parallax vine_1" ref={vine_1_ref} src={vine_1} data-speedx="0.25" data-speedy="0.17" data-rotation="0.10" alt="vine_1"/>
-        <img className="parallax vine_2" ref={vine_2_ref} src={vine_2} data-speedx="0.26" data-speedy="0.18" data-rotation="0.08" alt="vine_2"/>
-        <img className="parallax bush_1" src={mountainbush_1} data-speedx="0.070" data-speedy="0.035" data-rotation="0.20" alt="bush_1"/>
-        <img className="parallax bush_2" src={mountainbush_2} data-speedx="0.050" data-speedy="0.025" data-rotation="0.15" alt="bush_2"/>
-        <img className="parallax bush_3" src={mountainbush_2} data-speedx="0.065" data-speedy="0.020" data-rotation="0.23" alt="bush_1"/>
+        <img className="parallax river" ref={bg_img_ref} src={river} data-speedx="0.15" data-speedy="0.15" data-rotation="0" alt="background"/>
+            <img className="parallax leaves_1" ref={leaves_1_ref} src={leaves_1} style={{opacity: 1}} data-speedx="0.094" data-speedy="0.0814" data-rotation="0.94" alt="leaves"/>
+            <img className="parallax leaves_2" ref={leaves_2_ref} src={leaves_2} style={{opacity: 1}} data-speedx="0.12" data-speedy="0.12" data-rotation=".79" alt="leaves"/>
+        <TextBox title="Flow of the Three Marks" text={`Plunge into the rushing embrace of the river,
+          Pulled by unseen hands, the surge, the relentless tide—
+          Struggle, and the current swallows you whole,
+          Yield, and its chaos softens to a rhythmic dance.
+          
+          Impermanence occurs with each passing second,
+          A moment gone, a new one born
+          The water that once crashed is no longer the same—
+          The river flows, endlessly becoming.
+
+          The stones block the flow,
+          But the water bends, crashes, or flows around.
+          In acceptance, it moves forward,
+          Adapting to every obstacle.
+
+          No self is fixed—
+          We are but droplets flowing down the same river...
+          Be the current and the stillness,
+          Be water.
+          `}/>
         <img className="parallax fog_5" src={fog_5} data-speedx="0.35" data-speedy="0.105" data-rotation="0.35" alt="fog_5"/>
-        <img className="parallax lion" src={lion} data-speedx="0.070" data-speedy="0.053" data-rotation="0.15" alt="lion"/>
         <img className="parallax fog_7" src={fog_7} data-speedx="0.37" data-speedy="0.120" data-rotation="0.030" alt="fog_7"/>
         <img className="fog_left" ref={fog_left_ref} src={fog_4} alt="fog_left"/>
         <img className="fog_right" ref={fog_right_ref} src={fog_4} alt="fog_right"/>
         <div className="arrow_up hide">
-            <Link to="/page-four" className="arrow-link"><FaAngleUp size={40}/></Link>
+            <Link to="/page-three" className="arrow-link"><FaAngleUp size={40}/></Link>
         </div>
         <div className="arrow_down hide">
-            <Link to="/page-two" className="arrow-link"><FaAngleDown size={40}/></Link>
+            <Link to="/" className="arrow-link"><FaAngleDown size={40}/></Link>
         </div>
       </div>
     </div>

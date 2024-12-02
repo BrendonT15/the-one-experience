@@ -113,8 +113,8 @@ const HeroImg = () => {
                 <img className="parallax fog_5" src={fog_5} data-speedx="0.16" data-speedy="0.105" data-rotation="0" data-distance="1900" alt="fog_5"/>
                 <img className="parallax mountain_7" src={mountain_7} data-speedx="0.1" data-speedy="0.1" data-rotation="0.07" data-distance="2100" alt="mountain_7"/>
                 <div className="parallax text-parallax" data-speedx="0.07" data-speedy="0.07" data-rotation="0.11" data-distance="0">
-                    <h1 ref={h1_ref}>SEEKING THE PATH</h1>
-                    <h2 ref={h2_ref}>Inspired by Journey to the West</h2>
+                    <h1 ref={h1_ref}>THE ONE EXPERIENCE</h1>
+                    <h2 ref={h2_ref}>Where does the self end and the screen begin?</h2>
                 </div>
                 <img className="parallax mountain_6" src={mountain_6} data-speedx="0.065" data-speedy="0.05" data-rotation="0.12" data-distance="2300" alt="mountain_6"/>
                 <img className="parallax fog_4" src={fog_4} data-speedx="0.135" data-speedy="0.32" data-rotation="0" data-distance="2400" alt="fog_4"/>

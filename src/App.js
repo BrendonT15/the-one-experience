@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
-import PageTwo from "./routes/PageTwo";
 import PageThree from "./routes/PageThree";
 import PageFour from "./routes/PageFour";
 import PageFive from "./routes/PageFive";
@@ -19,13 +18,12 @@ function App() {
       <MusicPlayer/>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/page-two" element={<PageTwo />}/>
-        <Route path="/page-three" element={<PageThree/>}/>
-        <Route path="/page-four" element={<PageFour/>}/>
-        <Route path="/page-five" element={<PageFive/>}/>
-        <Route path="/page-six" element={<PageSix/>}/>
-        <Route path="/page-seven" element={<PageSeven/>}/>
-        <Route path="/page-eight" element={<PageEight/>}/>
+        <Route path="/page-two" element={<PageThree/>}/>
+        <Route path="/page-three" element={<PageFour/>}/>
+        <Route path="/page-four" element={<PageFive/>}/>
+        <Route path="/page-five" element={<PageSix/>}/>
+        <Route path="/page-six" element={<PageSeven/>}/>
+        <Route path="/page-seven" element={<PageEight/>}/>
       </Routes>
       </div>
     </MusicPlayerProvider>

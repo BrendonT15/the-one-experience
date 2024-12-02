@@ -6,16 +6,17 @@
 
 .text-container {
     position: absolute;
-    width: 900px;
-    height: 450px;
-    top: calc(50% - 250px);
-    left: calc(50% - 900px);
+    width: 900px;               /* Keep width fixed */
+    height: auto;               /* Allow the height to grow based on content */
+    top: calc(50% - 325px);      /* Keep vertical position fixed */
+    left: calc(50% - 450px);     /* Keep horizontal position fixed */
     border: solid;
     border-color: rgb(0, 0, 0);
     border-radius: 20px;
-    background: rgba(0,0,0,0.5);
-    padding: 2rem 2rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
     z-index: 110;
+    box-sizing: border-box;     /* Include padding in height calculation */
 }
 
 .text-container .poem-container .poem-text {
@@ -29,7 +30,7 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) {
     .text-container {
         left: calc(50% - 700px);
     }

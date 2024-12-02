@@ -134,7 +134,7 @@ const HeroImg8 = () => {
                 <Link to="/" className="arrow-link"><FaAngleUp size={40}/></Link>
             </div>
             <div className="arrow_down hide">
-                <Link to="/page-seven" className="arrow-link"><FaAngleDown size={40}/></Link>
+                <Link to="/page-six" className="arrow-link"><FaAngleDown size={40}/></Link>
             </div>
                 <img className="parallax fog_1" src={fog_1} data-speedx= "0.12" data-speedy="0.01" data-distance="4200" alt="fog_1"/>
             </div>

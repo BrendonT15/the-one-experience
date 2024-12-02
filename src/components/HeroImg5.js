@@ -5,10 +5,8 @@ import TextBox from "./TextBox.js";
 import gsap from "gsap";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 
-import summer from "../assets/summer.jpg";
+import lotus from "../assets/lotus.jpg";
 import fog_4 from "../assets/fog_4.png";
-import cicada from "../assets/golden_cicada.png";
-import branch from "../assets/branch.png";
 import godrays from "../assets/sun_rays.png"
 
 function HeroImg5() {
@@ -83,31 +81,35 @@ if(fog_left_ref.current && fog_right_ref.current){
     <div className="hero">
         <div className="mask_5">
             <div className="vignette hide"></div>
-            <img className="parallax summer" ref={bg_img_ref} src={summer} data-speedx="0.15" data-speedy="0.15" data-rotation="0" alt="background"/>
+            <img className="parallax lotus" ref={bg_img_ref} src={lotus} data-speedx="0.15" data-speedy="0.15" data-rotation="0" alt="background"/>
             <img className="godrays hide" src={godrays} alt="godrays"/>
-            <TextBox title="Summer Vision" text={`The intense summer heat blurs your vision,
-            Rest by the useless tree and let it shade you from the sun,
-            Close your eyes and let your senses guide you,
-            Through whispers of the breeze, stories unfold
-            Hear the rhythmic ticks from the Golden Cicadas,
-            Listen to the gentle rustle of the leaves,
-            Feel the rocky earth and the individual sediments beneath your feet,
-            The floor padded by a grassy bed,
-            Inhale the aromatic notes of blooming flowers,
-            And the freshness of the misty air,
-            Unseen beauty resides beyond perception,
-            The joys of life gathered in one space,
-            For this moment is short, 
-            Be present in the moment and embrace nature's gifts...`}/>
-            <img className="parallax cicada" src={cicada} data-speedx="0.085" data-speedy="0.084" data-rotation="0.5" alt="cicada"/>
-            <img className="parallax branch" src={branch} data-speedx="0.093" data-speedy="0.094" data-rotation="0.4" alt="branch"/>
+            <TextBox title="Lotus in the Dark" text={`Amid the suffocating darkness,
+                    where anguish clings like a second skin,
+                    a flower rises—
+                    its petals, soft as whispers,
+                    unfold against the black void.
+
+                    If you surrender to the void,
+                    the flower wilts,
+                    its light swallowed by the endless night.
+                    But when you let compassion flow,
+                    it transforms the shadows into a gentle glow,
+                    drawing strength from the very desolation that once threatened it.
+
+                    Compassion blooms here,
+                    not as a fleeting act,
+                    but as a force—unyielding, enduring,
+                    offering its beauty without hesitation,
+                    a defiant reminder
+                    that even in the heart of suffering,
+                    there is a place for grace.`}/>
             <img className="fog_left" ref={fog_left_ref} src={fog_4} alt="fog_left"/>
             <img className="fog_right" ref={fog_right_ref} src={fog_4} alt="fog_right"/>
             <div className="arrow_up hide">
-                <Link to="/page-six" className="arrow-link"><FaAngleUp size={40}/></Link>
+                <Link to="/page-five" className="arrow-link"><FaAngleUp size={40}/></Link>
             </div>
             <div className="arrow_down hide">
-                <Link to="/page-four" className="arrow-link"><FaAngleDown size={40}/></Link>
+                <Link to="/page-three" className="arrow-link"><FaAngleDown size={40}/></Link>
             </div>
         </div>
     </div>

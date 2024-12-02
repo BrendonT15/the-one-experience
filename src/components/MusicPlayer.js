@@ -4,7 +4,7 @@ import "./MusicPlayerStyles.css";
 import {FaVolumeUp, FaVolumeMute} from "react-icons/fa";
 
 const MusicPlayer = () => {
-    const { audio, mute, toggleMute } = useContext(MusicPlayerContext);
+    const { mute, toggleMute } = useContext(MusicPlayerContext);
 
   return (
     <div className="volume" onClick={toggleMute}>
