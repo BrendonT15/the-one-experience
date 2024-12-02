@@ -1,6 +1,6 @@
 {
-  "homepage": "https://brendont15.github.io/the-one-experience",
-  "name": "the-one-experience",
+  "homepage": "https://brendont15.github.io/one-experience",
+  "name": "one-experience",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.2.0"
   }
 }
